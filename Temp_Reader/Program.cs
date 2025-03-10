@@ -18,7 +18,7 @@ class Program
                 if (int.TryParse(Console.ReadLine(), out int FarDegrees))
                 {
                     var ConvCels = (FarDegrees - 32) * 5 / 9;
-                    Console.WriteLine("temperature is " + ConvCels + " in Celsius");
+                    Console.WriteLine("temperature is: " + ConvCels + "\u00B0C");
                     break;
                 }
                 else
@@ -36,7 +36,7 @@ class Program
                 if (int.TryParse(Console.ReadLine(), out int CelDegrees))
                 {
                     var ConvFar = (CelDegrees * 9 / 5) + 32;
-                    Console.WriteLine("temperature is " + ConvFar + " in Farenheit");
+                    Console.WriteLine("temperature is: " + ConvFar + "\u00B0F");
                     break;
                 }
 
